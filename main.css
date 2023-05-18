@@ -1,21 +1,226 @@
-*{
+* {
+margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background: peru;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/*----------------------------------HEADER--------------------------------------*/
+.header {
+  background-color: orange;
+  height: 110px;
+  background-image: url(./img/centro3.jpg);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+}
+
+.nav-link {
+  color: #ffbf75;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #7e1212;
+  transition: 0, 5s;
+}
+
+/*----------------------------------HEADER--------------------------------------*/
+.nav-toogle {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: burlywood;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 100px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 22px solid crimson;
+  color: #fff;
+  text-decoration: none;
+  background: crimson;
+}
+
+.btn:hover {
+  background: none;
+}
+
+.btn-home {
+  display: flex;
+}
+
+.btn-home a {
+  margin: 0 10px;
+}
+
+.content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sau {
+  padding: 30px;
+  background: #1f1d1d;
+}
+
+.box-container {
+  display: flex;
+  width: 1200px;
+  height: 430px;
+}
+
+.box-container img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.box-container img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.about {
+  background: #171717;
+}
+
+.price {
+  background: url(img/afuera.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 20px;
+  background: #171717;
+  padding-bottom: 0;
+}
+
+.contact h2 {
+  text-shadow: red -2px 0, cyan 2px 0;
+}
+
+/*-------------------------FOOTER-------------------------------*/
+footer .titulo-seccion,
+footer .copy {
+  color: #fff;
+  height: 5vh;
+}
+
+.copy {
+  padding: 30px;
+}
+
+.titulo-seccion {
+  padding: 30px;
+}
+
+.redes-sociales i {
+  font-size: 30px;
+  padding: 30px;
+  color: #fff;
+}
+
+.ftr {
+  background-image: url(./img/240_F_290306142_KbQa7zVXoLTcJ1mQAR03mHIwUeVc4wNF.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------------------FOOTER-------------------------------*/
+/*-------------------------responsive---------------------------*/
+@media (max-width: 768px) {
+  * {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-}
-
-body {
+  }
+  body {
     text-align: center;
-    font-family: sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.head {
+    padding-top: 70px;
+  }
+  .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,86 +229,56 @@ html {
     position: fixed;
     width: 100%;
     z-index: 100;
-
-}
-
-/*----------------------------------HEADER--------------------------------------*/
-
-.header {
+  }
+  .header {
     background-color: orange;
-    height: 110px;
-    background-image: url(./img/centro3.jpg);
-}
-
-.nav { 
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-}
-
-.nav-link {
-    color: #ffbf75;
-    text-decoration: none;
-}
-
-.logo {
-    font-size: 30px;
+    height: 60px;
+  }
+  .logo {
+    font-size: 25px;
     font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-}
-
-.nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    text-transform: uppercase;
-    width: max-content;
-}
-
-.nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-
-.nav-menu-link:hover,
-.nav-menu-link_active {
-    background-color: #7e1212;
-    transition: 0,5s;
-}
-/*----------------------------------HEADER--------------------------------------*/
-.nav-toogle {
-    color: #fff;
-    background: none;
-    border: none;
-    font-size: 30px;
     padding: 0 20px;
     line-height: 60px;
-    display: none;
-}
-
-.title {
+  }
+  .nav-menu {
+    flex-direction: column;
+    margin-right: 20px;
+    list-style: none;
+    background-color: #1f1d1d;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0, 3s;
+  }
+  .nav-menu-item {
+    line-height: 70px;
+  }
+  .nav-menu-link:hover .nav-menu-link_active {
+    background-color: none;
+    color: #83c5f7;
+  }
+  .nav-toogle {
+    display: block;
+  }
+  .title {
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     color: burlywood;
-}
-
-p { 
+  }
+  p {
     margin-bottom: 40px;
     font-size: 18px;
     color: #fff;
     padding: 0 100px;
-}
-
-.btn {
+  }
+  .btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 40px;
@@ -111,272 +286,68 @@ p {
     color: #fff;
     text-decoration: none;
     background: crimson;
-}
-
-.btn:hover {
+  }
+  .btn:hover {
     background: none;
-}
-
-.btn-home {
+  }
+  .btn-home {
     display: flex;
-}
-
-.btn-home a {
+  }
+  .btn-home a {
     margin: 0 10px;
-}
-
-.content {
-    height: 80vh;
+  }
+  .content {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sau {
+  }
+  .content h2 {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
+  .sau {
     padding: 30px;
     background: #1f1d1d;
-}
-
-.box-container {
+  }
+  .box-container {
     display: flex;
-    width: 1200px;
-    height: 430px;
-}
-.box-container img {
+    width: 100%;
+  }
+  .box-container img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-.box-container img:hover {
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .box-container img:hover {
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
-
-}
-
-.about {
+  }
+  .about {
     background: #171717;
-}
-
-.price { 
+  }
+  .price {
     background: url(img/afuera.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-}
-
-.contact { 
+  }
+  .contact {
     padding-top: 20px;
     background: #171717;
     padding-bottom: 0;
-}
-.contact h2 {
-    text-shadow: red -2px 0,
-                    cyan 2px 0
-}
-
-/*-------------------------FOOTER-------------------------------*/
-
-footer .titulo-seccion,
-footer .copy{
-    color: #fff;
-    height: 5vh;
-}
-.copy {
-    padding: 30px;
+  }
+  .contact h2 {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
+  .ftr {
+    background-color: black;
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
 }
 
-.titulo-seccion {
-    padding: 30px;
-}
-
-.redes-sociales i {
-    font-size: 30px;
-    padding: 30px;
-    color: #fff;
-
-}
-
-.ftr {
-    background-image: url(./img/240_F_290306142_KbQa7zVXoLTcJ1mQAR03mHIwUeVc4wNF.jpg);
-    display: flex;
-    flex-direction: column;
-}
-
-/*-------------------------FOOTER-------------------------------*/
-
-@media (max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-    }
-    
-    body {
-        text-align: center;
-        padding-top: 70px;
-        
-    }
-    
-    .head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        background: peru;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-    
-    }
-    
-    .header {
-        background-color: orange;
-        height: 60px;
-    }
-    
-    .logo {
-        font-size: 25px;
-        font-weight: bold;
-        padding: 0 20px;
-        line-height: 60px;
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        margin-right: 20px;
-        list-style: none;
-        background-color: #1f1d1d;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px  0;
-        height: calc(100%  -  60px);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0,3s;
-    }
-    
-    .nav-menu-item {
-        line-height: 70px;
-        
-    }
-    
-    .nav-menu-link:hover 
-    .nav-menu-link_active{
-        background-color: none;
-        color: #83c5f7;
-    }
-    
-    .nav-toogle {
-        display: block;
-    }
-    
-    .title {
-        margin-bottom: 40px;
-        font-size: 60px;
-        font-weight: 600;
-        text-transform: uppercase;  
-        color: burlywood;
-    }
-    
-    p { 
-        margin-bottom: 40px;
-        font-size: 18px;
-        color: #fff;
-        padding: 0 100px;
-    }
-    
-    .btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 40px;
-        border: 22px solid crimson;
-        color: #fff;
-        text-decoration: none;
-        background: crimson;
-    }
-    
-    .btn:hover {
-        background: none;
-    }
-    
-    .btn-home {
-        display: flex;
-    }
-    
-    .btn-home a {
-        margin: 0 10px;
-    }
-    
-    .content {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content h2 { 
-        text-shadow: red -2px 0,
-                        cyan 2px 0;
-    }
-    
-    .sau {
-        padding: 30px;
-        background: #1f1d1d;
-    }
-    
-    .box-container {
-        display: flex;
-        width: 100%;
-    }
-    .box-container img {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .box-container img:hover {
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-    
-    }
-    
-    .about {
-        background: #171717;
-    }
-    
-    .price { 
-        background: url(img/afuera.jpg) no-repeat center;
-        background-attachment: fixed;
-        background-size: cover;
-        text-align: center;
-    }
-    
-    .contact { 
-        padding-top: 20px;
-        background: #171717;
-        padding-bottom: 0;
-    }
-    .contact h2 {
-        text-shadow: red -2px 0,
-                        cyan 2px 0
-    }
-    .ftr {
-        background-color: black;
-        text-shadow: red -2px 0,
-                        cyan 2px 0;
-    }
-}
-
-
+/*# sourceMappingURL=main.css.map */
