@@ -1,5 +1,5 @@
 * {
-margin: 0;
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -49,6 +49,7 @@ html {
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
+  text-shadow: red -2px 0, orange 2px 0;
 }
 
 .nav-menu {
@@ -93,6 +94,7 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   color: burlywood;
+  text-shadow: red -2px 0, cyan 2px 0;
 }
 
 p {
@@ -137,6 +139,24 @@ p {
   background: #1f1d1d;
 }
 
+/* ------------------------------------grid--------------------------------*/
+.grid {
+  min-height: 100vh;
+  width: 100%;
+  outline: 10px solid #171717;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------------grid--------------------------------*/
 .box-container {
   display: flex;
   width: 1200px;
@@ -349,5 +369,6 @@ footer .copy {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 }
+
 
 /*# sourceMappingURL=main.css.map */
